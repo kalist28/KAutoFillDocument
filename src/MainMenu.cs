@@ -18,6 +18,7 @@ namespace KFillDoc
             List<string> filesName = new List<string>();
 
             DirectoryInfo dir = new DirectoryInfo(Environment.CurrentDirectory + @"\\docs");
+            Console.WriteLine(dir.ToString());
             foreach (var item in dir.GetFiles())
             {
                 filesName.Add(item.Name);

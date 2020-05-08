@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\UIElements"
   ],
-  "SelectedNode": "\\KFillDoc.sln",
+  "SelectedNode": "\\src\\MainMenu.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

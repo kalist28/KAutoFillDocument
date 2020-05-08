@@ -59,7 +59,6 @@ namespace KFillDoc
         /// </summary>
         void CreateDocument()
         {
-            Console.WriteLine(2);
             String fileNewName = FirstFileName + "_"
                 + DateTime.Now.ToString("HH-mm-ss_dd-mm-yyyy")
                 + ".docx";
@@ -75,7 +74,6 @@ namespace KFillDoc
         /// Элементы отсортированны по уникальному номеру закладки. </returns>
         public List<String> GetBookmarks()
         {
-            Console.WriteLine(4);
             List<String> list = new List<string>();
 
             Word.Application app = new Word.Application();
@@ -99,7 +97,6 @@ namespace KFillDoc
         /// <returns> Элементы отсортированны по уникальному номеру закладки. </returns>
         private List<string> SortBookmarks(List<string> list)
         {
-            Console.WriteLine("List start count = " + list.Count);
             List<string> sortList = new List<string>();
             int count = 1;
             
@@ -109,14 +106,10 @@ namespace KFillDoc
                 {
                     if (Adapter.GetType(list[i]) == count)
                     {
-                        Console.WriteLine("A/R" + list[i]);
                         sortList.Add(list[i]);
                         list.Remove(list[i]);
                     }
                 }
-                Console.WriteLine("List count = " + list.Count);
-                Console.WriteLine("Count =" + count);
-                Console.WriteLine("_____________________");
                 count++;
             }
             return sortList;
@@ -158,6 +151,12 @@ namespace KFillDoc
                     var o = (IInputTextInfo)obj.Element;
                     pCntls.Add(o.GetLabel(), P_FIRST, i);
                     pCntls.Add(o.GetTextBox(), P_SECOND, i);
+                }
+                if (obj.Element is InputDate)
+                {
+                    var o = (InputDate) obj.Element;
+                    pCntls.Add(o.GetLabel(), P_FIRST, i);
+                    pCntls.Add(o.GetDateTimePicker(), P_SECOND, i);
                 }
             }
 
@@ -213,7 +212,6 @@ namespace KFillDoc
 
                 foreach (Word.Bookmark mark in bookmarks)
                 {
-                    int countValue = 0;
                     for (int i = 0; i < Elements.Count; i++)
                     {
                         var obj = Elements[i];
@@ -224,7 +222,6 @@ namespace KFillDoc
                             range.Text = obj.Element.GetInformation();
                             break;
                         }
-                        countValue++;
                     }
                 }
                 CreateCheckText(doc);
@@ -244,12 +241,13 @@ namespace KFillDoc
         /// <param name="doc"></param>
         private void CreateCheckText(Word.Document doc)
         {
-            CheckDocText = "";
-            for (int i = 1; i < doc.Paragraphs.Count; i++)
-            {
-                string parText = doc.Paragraphs[i].Range.Text;
-                CheckDocText += parText + "\n";
-            }
+            CheckDocText = doc.Content.Text;
+           //CheckDocText = "";
+           //for (int i = 1; i < doc.Paragraphs.Count; i++)
+           //{
+           //    string parText = doc.Paragraphs[i].Range.Text;
+           //    CheckDocText += parText + "\n";
+           //}
         }
         
     }

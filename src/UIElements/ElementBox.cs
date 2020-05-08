@@ -4,7 +4,7 @@ namespace KFillDoc.UIElements
 {
     /// <summary>
     /// K_Fill-Doc Application
-    /// Элемент UI который отвечает за информацию определенной закладки.
+    /// Элемент UI который отвечает за отображения имени закладки и поля для ввода.
     /// 
     /// Author Dmitriy Kalistratov <kalistratov.d.m@gmail.com>
     /// </summary>

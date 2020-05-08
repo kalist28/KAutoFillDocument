@@ -31,7 +31,7 @@ namespace KFillDoc.UIElements
         /// <returns></returns>
         public static int BookmarksCount()
         {
-            return 15;
+            return 16;
         }
         /// <summary>
         /// Метот вовращает определенный элемент ПИ.
@@ -72,6 +72,8 @@ namespace KFillDoc.UIElements
                     return new InputField("Отчество отца");
                 case "FatherPhoneNumber":
                     return new InputNumber("Мобильный телефон отца");
+                case "DayNow":
+                    return new InputDate("Выбирите дату");
                 default:
                     return null;
             }
@@ -116,6 +118,8 @@ namespace KFillDoc.UIElements
                     return 14;
                 case "FatherPhoneNumber":
                     return 15;
+                case "DayNow":
+                    return 16;
                 default:
                     return 0;
             }

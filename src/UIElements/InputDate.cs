@@ -33,10 +33,8 @@ namespace KFillDoc.UIElements
         /// Возращает число дня.
         /// </summary>
         /// <returns> Число. </returns>
-        public int GetDay()
-        {
-            return DateTimePicker.Value.Day;
-        }
+        public int GetDay() => DateTimePicker.Value.Day;
+        
 
         /// <summary>
         /// Возращает месяц в двух падежах.
@@ -120,7 +118,7 @@ namespace KFillDoc.UIElements
 
         public override string GetInformation()
         {
-            throw new NotImplementedException();
+            return GetDay() + "." + GetMonth(true) + "." + GetYear();
         }
 
         public new void Dispose()

@@ -19,3 +19,14 @@ C:\Users\Kalis\WinPrograms\KFillDoc\obj\Debug\K_AutoFillDoc.Properties.Resources
 C:\Users\Kalis\WinPrograms\KFillDoc\obj\Debug\KFillDoc.csproj.GenerateResource.cache
 C:\Users\Kalis\WinPrograms\KFillDoc\obj\Debug\K_AutoFillDoc.exe
 C:\Users\Kalis\WinPrograms\KFillDoc\obj\Debug\K_AutoFillDoc.pdb
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\bin\Debug\K_AutoFillDoc.exe.config
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\bin\Debug\K_AutoFillDoc.exe
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\bin\Debug\K_AutoFillDoc.pdb
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\KFillDoc.csprojAssemblyReference.cache
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\KFillDoc.csproj.ResolveComReference.cache
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\KFillDoc.CheckForm.resources
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\KFillDoc.MainMenu.resources
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\K_AutoFillDoc.Properties.Resources.resources
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\KFillDoc.csproj.GenerateResource.cache
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\K_AutoFillDoc.exe
+C:\Users\Kalis\WinPrograms\K-AutoFillDocument\obj\Debug\K_AutoFillDoc.pdb
